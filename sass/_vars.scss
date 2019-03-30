@@ -1,2 +1,13 @@
-$bg-color: #ED1D24;
-$text-color: white;
+$bg-color: rgb(252, 178, 41);
+$bg: rgb(245, 245, 245);
+$text-color: rgb(39, 39, 39);
+
+@mixin ease {
+  transition: all 0.3s ease;
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 1px 24px -5px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 1px 24px -5px rgba(0, 0, 0, 0.72);
+  box-shadow: 0px 1px 24px -5px rgba(0, 0, 0, 0.72);
+}

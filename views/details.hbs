@@ -1,0 +1,17 @@
+<section id="favourite-cont">
+  <h1>{{thing.title}}</h1>
+
+  <div class="quote">
+    <h3><span class="quotes">"</span>{{thing.quote}}<span class="quotes">"</span></h3>
+    <small> - {{thing.quote_author}}</small>
+  </div>
+
+  <div class="photos">
+    {{#each images}}
+    <img src="/images/{{image}}" alt="bio image">
+    {{/each}}
+  </div>
+  <h3>About {{thing.title}}</h3>
+  <p>{{thing.desc}}</p>
+
+</section>

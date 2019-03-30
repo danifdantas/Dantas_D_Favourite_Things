@@ -1,0 +1,35 @@
+#favourite-cont {
+  padding: 2rem;
+  height: 100%;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 760px) {
+    grid-template-columns: repeat(3, 1fr);
+    max-height: 254px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.quote {
+  margin-bottom: 20px;
+}
+
+.quotes {
+  font-size: 18px;
+  color: $bg-color;
+}
